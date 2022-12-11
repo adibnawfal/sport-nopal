@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <link rel="stylesheet" href="../../style.css" />
+  <script src="../../main.js" defer></script>
+  <title>Nike Pegasus FlyEase</title>
+</head>
+<body>
+  <div class="navBar">
+    <img src="../images/logo.png" />
+    <div class="menu">
+      <a href="../../index.html"><p>Home</p></a>
+      <a href="../../catalog.html" style="margin: 0 50px"><p>Products</p></a>
+      <a href="../../sale.html"><p>SALE</p></a>
+    </div>
+    <div class="icon">
+      <a href="../../register.html">
+        <ion-icon name="person"></ion-icon>
+      </a>
+      <a href="../../cart.html" style="margin-left: 20px">
+        <ion-icon name="bag-handle"></ion-icon>
+      </a>
+    </div>
+  </div>
+  <div class="content">
+    <div class="filter">
+      <div class="size">
+        <p class="title">Select Size</p>
+        <div class="row">
+          <a href="#"><p class="details">UK 6</p></a>
+          <a href="#" style="margin: 0 10px"><p class="details">UK 6.5</p></a>
+          <a href="#"><p class="details">UK 7</p></a>
+        </div>
+        <div class="row">
+          <a href="#"><p class="details">UK 7.5</p></a>
+          <a href="#" style="margin: 0 10px"><p class="details">UK 8</p></a>
+          <a href="#"><p class="details">UK 8.5</p></a>
+        </div>
+        <div class="row">
+          <a href="#"><p class="details">UK 9</p></a>
+          <a href="#" style="margin: 0 10px"><p class="details">UK 9.5</p></a>
+          <a href="#"><p class="details">UK 10</p></a>
+        </div>
+        <div class="row">
+          <a href="#"><p class="details">UK 10.5</p></a>
+          <a href="#" style="margin: 0 10px"><p class="details">UK 11</p></a>
+          <a href="#"><p class="details">UK 11.5</p></a>
+        </div>
+        <div class="row">
+          <p class="details">UK 12</p>
+        </div>
+      </div>
+    </div>
+    <div class="images">
+      <img
+        src="../images/products/1/1.png"
+        style="width: 100%"
+        width="600px"
+        height="500px"
+      />
+      <div class="row">
+        <img id="imej" src="../images/products/1/2.png" />
+        <img src="../images/products/1/3.png" />
+      </div>
+      <div class="row">
+        <img src="../images/products/1/4.png" />
+        <img src="../images/products/1/5.png" />
+      </div>
+      <div class="row">
+        <img src="../images/products/1/6.png" />
+      </div>
+    </div>
+    <div class="txt">
+      <p id="title" class="title">Nike Pegasus FlyEase</p>
+      <p class="details">Men's Easy On/Off Road Running Shoes</p>
+      <p id="price" class="price">RM519</p>
+      <p class="description">
+        Let the Nike Pegasus FlyEase, a balanced and energised ride for any run,
+        help you ascend to new heights. A supportive sensation helps keep your
+        foot contained, while underfoot Air adds a pop to your step as you
+        transition from heel to toe. Nike FlyEase technology acts as a strap,
+        helping secure the fit. Your trusted workhorse with wings is back. Time
+        to fly.
+      </p>
+      <ul>
+        <li>
+          Colour Shown: Bright Spruce/Valerian Blue/Peach Cream/Light Crimson
+        </li>
+        <li>Style: DJ7381-300</li>
+      </ul>
+      <button class="btn" onclick="addProduct()">Add To Cart</button>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="company">
+      <img src="../images/logo-white.png" width="120px" />
+      <div class="categories">
+        <p class="title">Product</p>
+        <a href="../categories/lifestyle.html">
+          <p class="details">Lifestyle</p>
+        </a>
+        <a href="../categories/running.html">
+          <p class="details">Running</p>
+        </a>
+        <a href="../categories/basketball.html">
+          <p class="details">Basketball</p>
+        </a>
+        <a href="../categories/football.html">
+          <p class="details">Football</p>
+        </a>
+        <a href="../categories/trainingandgym.html">
+          <p class="details" style="margin-bottom: 0">Training & Gym</p>
+        </a>
+      </div>
+      <div class="categories">
+        <p class="title">Support</p>
+        <a href="#"><p class="details">FAQ</p></a>
+        <a href="#"><p class="details">Delivery</p></a>
+        <a href="#"><p class="details">Returns</p></a>
+        <a href="#"><p class="details">Payment Options</p></a>
+        <a href="#">
+          <p class="details" style="margin-bottom: 0">Contact Us</p>
+        </a>
+      </div>
+      <div class="categories">
+        <p class="title">Support</p>
+        <a href="#"><p class="details">News</p></a>
+        <a href="#"><p class="details">Careers</p></a>
+        <a href="#"><p class="details">Investors</p></a>
+        <a href="#">
+          <p class="details" style="margin-bottom: 0">Sustainability</p>
+        </a>
+      </div>
+      <div>
+        <p class="title">Follow Us</p>
+        <div class="followUs">
+          <a href="https://github.com/adibnawfal" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/adibnawfal/"
+            target="_blank"
+            style="margin: 0 20px"
+          >
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://www.twitter.com/" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="policy">
+      <p>Copyright © 2022 Sport Nopal, Inc. All Rights Reserved</p>
+      <a href="#"><p>Privacy Policy</p></a>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  />
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="./main.js" defer></script>
+  <title>Sign Up</title>
+</head>
+<body>
+  <div class="container">
+    <div class="navBar">
+      <img src="./src/images/logo.png" />
+      <div class="menu">
+        <a href="./index.html"><p>Home</p></a>
+        <a href="./catalog.html" style="margin: 0 50px"><p>Products</p></a>
+        <a href="./sale.html"><p>SALE</p></a>
+      </div>
+      <div class="icon">
+        <a href="./register.html">
+          <ion-icon name="person"></ion-icon>
+        </a>
+        <a href="./cart.html" style="margin-left: 20px">
+          <ion-icon name="bag-handle"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <div class="register">
+      <div class="ads">
+        <div class="opacity">
+          <p>Members only :</p>
+          <p class="text">
+            get <span style="color: red">10%</span><br />discount<br />of your
+            1st<br />purchase.
+          </p>
+        </div>
+      </div>
+      <form id="form" class="form register" novalidate>
+        <div style="display: flex; flex-direction: column">
+          <p class="title">Get's Started</p>
+          <p style="margin-bottom: 24px">
+            Already have an account?
+            <a href="./login.html" style="font-weight: 700">Log In</a>
+          </p>
+          <div style="display: flex; justify-content: space-between">
+            <a class="signUpBox">
+              <img src="./src/images/google.svg" style="width: 26px" />
+              <p>Sign up with Google</p>
+            </a>
+            <a
+              class="signUpBox"
+              style="border-style: hidden; background-color: #4267b3"
+            >
+              <img src="./src/images/facebook.svg" style="width: 26px" />
+              <p style="color: #fff">Sign up with Facebook</p>
+            </a>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin: 24px 0;
+            "
+          >
+            <div class="line"></div>
+            <p style="font-weight: 600; color: #cacaca">or</p>
+            <div class="line"></div>
+          </div>
+          <div class="formBox">
+            <div class="box">
+              <span class="material-symbols-outlined">mail</span>
+              <input
+                type="email"
+                id="email"
+                class="input"
+                placeholder="Email Address"
+              />
+              <span class="material-symbols-outlined err">error</span>
+            </div>
+            <p>Error message</p>
+          </div>
+          <div class="formBox" style="margin: 24px 0">
+            <div class="box">
+              <span class="material-symbols-outlined">lock</span>
+              <input
+                type="password"
+                id="password"
+                class="input"
+                placeholder="Password"
+              />
+              <input
+                type="checkbox"
+                style="display: flex"
+                class="showPass"
+                onclick="showPass()"
+              />
+              <span class="material-symbols-outlined err">error</span>
+            </div>
+            <p>Error message</p>
+          </div>
+          <div class="policyBox">
+            <input type="checkbox" id="checkBox" />
+            <p style="margin-left: 15px">
+              I accept the <a style="font-weight: 700">Terms of Service</a> and
+              <a style="font-weight: 700">Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+        <input
+          type="submit"
+          id="submitBtn"
+          value="Register"
+          class="registerBox"
+        />
+      </form>
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <div class="footer">
+    <div class="company">
+      <img src="./src/images/logo-white.png" width="120px" />
+      <div class="categories">
+        <p class="title">Product</p>
+        <a href="./src/categories/lifestyle.html">
+          <p class="details">Lifestyle</p>
+        </a>
+        <a href="./src/categories/running.html">
+          <p class="details">Running</p>
+        </a>
+        <a href="./src/categories/basketball.html">
+          <p class="details">Basketball</p>
+        </a>
+        <a href="./src/categories/football.html">
+          <p class="details">Football</p>
+        </a>
+        <a href="./src/categories/trainingandgym.html">
+          <p class="details" style="margin-bottom: 0">Training & Gym</p>
+        </a>
+      </div>
+      <div class="categories">
+        <p class="title">Support</p>
+        <a><p class="details">FAQ</p></a>
+        <a><p class="details">Delivery</p></a>
+        <a><p class="details">Returns</p></a>
+        <a><p class="details">Payment Options</p></a>
+        <a>
+          <p class="details" style="margin-bottom: 0">Contact Us</p>
+        </a>
+      </div>
+      <div class="categories">
+        <p class="title">Support</p>
+        <a><p class="details">News</p></a>
+        <a><p class="details">Careers</p></a>
+        <a><p class="details">Investors</p></a>
+        <a>
+          <p class="details" style="margin-bottom: 0">Sustainability</p>
+        </a>
+      </div>
+      <div>
+        <p class="title">Follow Us</p>
+        <div class="followUs">
+          <a href="https://github.com/adibnawfal" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/adibnawfal/"
+            target="_blank"
+            style="margin: 0 20px"
+          >
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://www.twitter.com/" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="policy">
+      <p>Copyright © 2022 Sport Nopal, Inc. All Rights Reserved</p>
+      <a><p>Privacy Policy</p></a>
+    </div>
+  </div>
+</body>

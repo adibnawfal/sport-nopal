@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script src="./main.js" defer></script>
+  <title>Sport Nopal</title>
+</head>
+<body onload="getPopular()">
+  <div class="sectionOne">
+    <div class="navBar">
+      <img src="./src/images/logo.png" />
+      <div class="menu">
+        <a href="./index.html"><p>Home</p></a>
+        <a href="./catalog.html" style="margin: 0 50px"><p>Products</p></a>
+        <a href="./sale.html"><p>SALE</p></a>
+      </div>
+      <div class="icon">
+        <a href="./register.html">
+          <ion-icon name="person"></ion-icon>
+        </a>
+        <a href="./cart.html" style="margin-left: 20px">
+          <ion-icon name="bag-handle"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="sectionTwo">
+    <div class="promotion">
+      <p>
+        shop now, pay later and get up to
+        <span style="color: red; font-weight: 800"> 20% </span>
+        off your first credit order
+      </p>
+    </div>
+    <div class="mostPopular">
+      <p class="header">Most Popular</p>
+      <div id="mostPopular" class="row">
+        <!-- getPopular() result will show here -->
+      </div>
+    </div>
+  </div>
+  <div class="sectionThree">
+    <p class="header">Right For You</p>
+    <div class="boxContainer">
+      <button id="7" onclick="getId(this.id)">
+        <div class="box" style="background-image: url('./src/images/box1.png')">
+          <div class="opacity">
+            <p class="title">Nike React Infinity Run Flyknit 3</p>
+            <p class="description">Men's Road Running Shoes</p>
+          </div>
+        </div>
+      </button>
+      <button id="5" onclick="getId(this.id)">
+        <div class="box" style="background-image: url('./src/images/box2.png')">
+          <div class="opacity">
+            <p class="title">Nike Blazer Mid '77 Premium</p>
+            <p class="description">Men's Shoes</p>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="company">
+      <img src="./src/images/logo-white.png" width="120px" />
+      <div class="categories">
+        <p class="title">Product</p>
+        <a href="./src/categories/lifestyle.html">
+          <p class="details">Lifestyle</p>
+        </a>
+        <a href="./src/categories/running.html">
+          <p class="details">Running</p>
+        </a>
+        <a href="./src/categories/basketball.html">
+          <p class="details">Basketball</p>
+        </a>
+        <a href="./src/categories/football.html">
+          <p class="details">Football</p>
+        </a>
+        <a href="./src/categories/trainingandgym.html">
+          <p class="details" style="margin-bottom: 0">Training & Gym</p>
+        </a>
+      </div>
+      <div class="categories">
+        <p class="title">Support</p>
+        <a href="#"><p class="details">FAQ</p></a>
+        <a href="#"><p class="details">Delivery</p></a>
+        <a href="#"><p class="details">Returns</p></a>
+        <a href="#"><p class="details">Payment Options</p></a>
+        <a href="#">
+          <p class="details" style="margin-bottom: 0">Contact Us</p>
+        </a>
+      </div>
+      <div class="categories">
+        <p class="title">Support</p>
+        <a href="#"><p class="details">News</p></a>
+        <a href="#"><p class="details">Careers</p></a>
+        <a href="#"><p class="details">Investors</p></a>
+        <a href="#">
+          <p class="details" style="margin-bottom: 0">Sustainability</p>
+        </a>
+      </div>
+      <div>
+        <p class="title">Follow Us</p>
+        <div class="followUs">
+          <a href="https://github.com/adibnawfal" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/adibnawfal/"
+            target="_blank"
+            style="margin: 0 20px"
+          >
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://www.twitter.com/" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="policy">
+      <p>Copyright © 2022 Sport Nopal, Inc. All Rights Reserved</p>
+      <a href="#"><p>Privacy Policy</p></a>
+    </div>
+  </div>
+</body>

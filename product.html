@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./main.js" defer></script>
+  <title>Nike Pegasus FlyEase</title>
+</head>
+<body onload="showProduct()">
+  <div class="navBar">
+    <img src="./src/images/logo.png" />
+    <div class="menu">
+      <a href="./index.html"><p>Home</p></a>
+      <a href="./catalog.html" style="margin: 0 50px"><p>Products</p></a>
+      <a href="./sale.html"><p>SALE</p></a>
+    </div>
+    <div class="icon">
+      <a href="./register.html">
+        <ion-icon name="person"></ion-icon>
+      </a>
+      <a href="./cart.html" style="margin-left: 20px">
+        <ion-icon name="bag-handle"></ion-icon>
+      </a>
+    </div>
+  </div>
+  <div class="content">
+    <div class="filter">
+      <div class="size">
+        <p class="title">Select Size</p>
+        <div id="size" class="row">
+          <button class="details active">UK 6</button>
+          <button class="details" style="margin: 0 10px">UK 6.5</button>
+          <button class="details">UK 7</button>
+          <button class="details">UK 7.5</button>
+          <button class="details" style="margin: 0 10px">UK 8</button>
+          <button class="details">UK 8.5</button>
+          <button class="details">UK 9</button>
+          <button class="details" style="margin: 0 10px">UK 9.5</button>
+          <button class="details">UK 10</button>
+          <button class="details">UK 10.5</button>
+          <button class="details" style="margin: 0 10px">UK 11</button>
+          <button class="details">UK 11.5</button>
+          <button class="details">UK 12</button>
+        </div>
+      </div>
+    </div>
+    <div class="images">
+      <img id="src1" style="width: 100%" width="600px" height="500px" />
+      <div class="row">
+        <img id="src2" />
+        <img id="src3" />
+      </div>
+      <div class="row">
+        <img id="src4" />
+        <img id="src5" />
+      </div>
+      <div class="row">
+        <img id="src6" />
+      </div>
+    </div>
+    <div class="txt">
+      <p id="dataTitle" class="title">Product Title</p>
+      <p id="dataDetails" class="details">Product details</p>
+      <p id="dataPrice" class="price">Product price</p>
+      <p id="dataDescription" class="description">Product description</p>
+      <ul>
+        <li id="dataColor">Product color</li>
+        <li id="dataModel">Product model</li>
+      </ul>
+      <button class="btn" onclick="addCartProduct()">Add To Cart</button>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="company">
+      <img src="./src/images/logo-white.png" width="120px" />
+      <div class="categories">
+        <p class="title">Product</p>
+        <a href="./src/categories/lifestyle.html">
+          <p class="details">Lifestyle</p>
+        </a>
+        <a href="./src/categories/running.html">
+          <p class="details">Running</p>
+        </a>
+        <a href="./src/categories/basketball.html">
+          <p class="details">Basketball</p>
+        </a>
+        <a href="./src/categories/football.html">
+          <p class="details">Football</p>
+        </a>
+        <a href="./src/categories/trainingandgym.html">
+          <p class="details" style="margin-bottom: 0">Training & Gym</p>
+        </a>
+      </div>
+      <div class="categories">
+        <p class="title">Support</p>
+        <a><p class="details">FAQ</p></a>
+        <a><p class="details">Delivery</p></a>
+        <a><p class="details">Returns</p></a>
+        <a><p class="details">Payment Options</p></a>
+        <a>
+          <p class="details" style="margin-bottom: 0">Contact Us</p>
+        </a>
+      </div>
+      <div class="categories">
+        <p class="title">Support</p>
+        <a><p class="details">News</p></a>
+        <a><p class="details">Careers</p></a>
+        <a><p class="details">Investors</p></a>
+        <a>
+          <p class="details" style="margin-bottom: 0">Sustainability</p>
+        </a>
+      </div>
+      <div>
+        <p class="title">Follow Us</p>
+        <div class="followUs">
+          <a href="https://github.com/adibnawfal" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/adibnawfal/"
+            target="_blank"
+            style="margin: 0 20px"
+          >
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://www.twitter.com/" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="policy">
+      <p>Copyright © 2022 Sport Nopal, Inc. All Rights Reserved</p>
+      <a><p>Privacy Policy</p></a>
+    </div>
+  </div>
+</body>
